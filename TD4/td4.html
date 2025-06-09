@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>td4</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<section id="institut-universitaire-des-sciences"
+style="text-align:center">
+<h1>Institut Universitaire des Sciences</h1>
+<h2 id="faculté-des-sciences-de-technologies">Faculté des sciences de
+technologies</h2>
+<h3 id="td-4-réseau-2">TD 4 Réseau 2</h3>
+<h3 id="préparé-par">Préparé par :</h3>
+<h3 id="nom-byron">Nom: Byron</h3>
+<h3 id="prénom-pierre-durell-naguiby">Prénom: Pierre Durell Naguiby</h3>
+<h2 id="niveau-l3---sciences-informatiques">Niveau: L3 - Sciences
+Informatiques</h2>
+</section>
+<hr />
+<h1 id="reproduisez-cette-topologie-en-configurant-le-nat-du-réseau">1.
+Reproduisez cette topologie en configurant le NAT du réseau</h1>
+<figure>
+<img src="images/Topologie1.png" style="width:95.0%"
+alt="imageTopologie1" />
+<figcaption aria-hidden="true">imageTopologie1</figcaption>
+</figure>
+<h2 id="configuration-nat">Configuration nat</h2>
+<figure>
+<img src="images/1-nat.png" style="width:95.0%" alt="imageConfNat" />
+<figcaption aria-hidden="true">imageConfNat</figcaption>
+</figure>
+<h3 id="dns">DNS</h3>
+<figure>
+<img src="images/1-ConfDNS.png" style="width:95.0%"
+alt="imageConfServeurDNS" />
+<figcaption aria-hidden="true">imageConfServeurDNS</figcaption>
+</figure>
+<h3
+id="configuration-du-serveur-dhcp-sur-le-routeur-cisco">Configuration du
+serveur DHCP sur le routeur Cisco</h3>
+<figure>
+<img src="images/1-ConfRouteurDHCP.png" style="width:95.0%"
+alt="imageConfServeurDNS" />
+<figcaption aria-hidden="true">imageConfServeurDNS</figcaption>
+</figure>
+<h3 id="vérifications-des-ip">Vérifications des ip</h3>
+<figure>
+<img src="images/1-VerificationdesIP.png" style="width:95.0%"
+alt="imageConfServeurDNS" />
+<figcaption aria-hidden="true">imageConfServeurDNS</figcaption>
+</figure>
+<h2 id="activé-les-services-dns">Activé les services dns</h2>
+<figure>
+<img src="images/1-ConfServicesDNS.png" style="width:95.0%"
+alt="imageConfServeurDNS" />
+<figcaption aria-hidden="true">imageConfServeurDNS</figcaption>
+</figure>
+<h3 id="test">Test</h3>
+<figure>
+<img src="images/1-ping.png" style="width:95.0%" alt="imageTestPing" />
+<figcaption aria-hidden="true">imageTestPing</figcaption>
+</figure>
+<h2 id="configuration-de-nat-sur-le-routeur-cisco">Configuration de NAT
+sur le routeur Cisco :</h2>
+<figure>
+<img src="images/1-confNatRouteur.png" style="width:95.0%"
+alt="imageConfNat" />
+<figcaption aria-hidden="true">imageConfNat</figcaption>
+</figure>
+<h2 id="configuration-de-nat-dynamique-pat">Configuration de NAT
+dynamique (PAT) :</h2>
+<figure>
+<img src="images/1-confNatRouteurDyN.png" style="width:95.0%"
+alt="imageConfNatDyN" />
+<figcaption aria-hidden="true">imageConfNatDyN</figcaption>
+</figure>
+<h2 id="test-de-connectivité">Test de connectivité</h2>
+<h2 id="imageconftest"><img src="images/1-testConfig.png"
+style="width:95.0%" alt="imageConfTest" /></h2>
+<h1
+id="reproduisez-cette-topologie-en-configurant-le-réseau-iot-internet-des-objets.">2.
+Reproduisez cette topologie en configurant le réseau IoT (Internet des
+Objets).</h1>
+<figure>
+<img src="images/Topologie2.png" style="width:95.0%" alt="Topologie2" />
+<figcaption aria-hidden="true">Topologie2</figcaption>
+</figure>
+<h2 id="configuration-du-point-acces">Configuration du point Acces</h2>
+<figure>
+<img src="images/2-AccessPoint.png" style="width:95.0%"
+alt="imgConfPT-Acess" />
+<figcaption aria-hidden="true">imgConfPT-Acess</figcaption>
+</figure>
+<h2 id="activation-des-services-iot">Activation des services IOT</h2>
+<figure>
+<img src="images/2-ServIOT.png" style="width:95.0%"
+alt="imageConfTest" />
+<figcaption aria-hidden="true">imageConfTest</figcaption>
+</figure>
+<h2 id="registration-au-server">Registration au server</h2>
+<figure>
+<img src="images/2-RegAuServer.png" style="width:95.0%"
+alt="imageConfTest" />
+<figcaption aria-hidden="true">imageConfTest</figcaption>
+</figure>
+<h2 id="configurer-les-iot">Configurer les IOT</h2>
+<p><img src="images/2-IOT2.png" style="width:95.0%"
+alt="imageConfTest" /> <img src="images/2-IOT3.png" style="width:95.0%"
+alt="imageConfTest" /><img src="images/2-IOT4.png" style="width:95.0%"
+alt="imageConfTest" /> <img src="images/2-IOT5.png" style="width:95.0%"
+alt="imageConfTest" /></p>
+<hr />
+<h1 id="conclusion">Conclusion</h1>
+<p>En conclusion, ce TD me permet de configurer et de simuler un réseau
+avec les protocoles NAT, DHCP et DNS, ainsi que les réseaux IoT.</p>
+</body>
+</html>
